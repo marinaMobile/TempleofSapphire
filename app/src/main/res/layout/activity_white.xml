@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".white.White"
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/textt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="You were walking through the jungles. During your journey you met the old man who suggested to play with him. The rules of the game are simple: Clover defeats Strawberry, Grape defeats Clover, Strawberry defeats Grape. Click on the wheel to start the game!"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toBottomOf="@id/textt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/wheel"
+        android:scaleType="centerCrop"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
